@@ -1,12 +1,31 @@
 .header-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
+    width: 100%;
     height: 65px;
-    background-color: #f4ff;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    align-items: center;
 }
 
+.header--title-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.7482px;
+    line-height: 24px;
+    letter-spacing: -0.1em;
+    margin-left: 20px;
+}
 .header--img {
-    height: 65px;
-    width: 65px;
+    height: 31px;
+    width: 26px;
+}
+
+
+.header--title2 {
+    margin-right: 20px;
 }
