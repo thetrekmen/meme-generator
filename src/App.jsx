@@ -13,8 +13,8 @@ export default function App() {
         headerTitle2="React Course - Project 3"
         />
       <Meme
-        label1="top text:"
-        label2="bottom text:"
+        placeHolder1="top text"
+        placeHolder2="bottom text"
         submitButtonText="Get a new meme image"
        />
     </div>
