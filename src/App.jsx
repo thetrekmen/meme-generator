@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
+import Meme from './Components/Meme/Meme';
 
 
 export default function App() {
@@ -11,6 +12,11 @@ export default function App() {
         headerTitle="Meme Generator" 
         headerTitle2="React Course - Project 3"
         />
+      <Meme
+        label1="top text:"
+        label2="bottom text:"
+        submitButtonText="Get a new meme image"
+       />
     </div>
   )
 };
