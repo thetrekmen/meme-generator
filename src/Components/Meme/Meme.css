@@ -1,4 +1,4 @@
-form {
+.form {
     width: 100%;
     text-align: center;
     margin-top: 36px;
@@ -60,9 +60,17 @@ input[type="text"]::placeholder {
     text-align: center;
 }
 
+img {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
 @media only screen and (max-width: 700px) {
 
-    form {
+    .form {
         width: 477px;
         margin: 0 auto;
         margin-top: 36px;
