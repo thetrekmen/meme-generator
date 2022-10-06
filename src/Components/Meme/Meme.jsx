@@ -1,12 +1,25 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Meme.css';
+import memeData from '../../meme-database'
 
 export default function Meme(props) {
-    const [url,setUrl] = useState(props.state);
+    const [urlImg, setUrlImg] = useState({
+        topText: "",
+        bottomText: "",
+        randomImage: "",
+        ...memeData
+    });
 
     function changeUrl() {
-        setUrl(props.imgUrl);
+        setUrlImg(prevState => {
+            return {
+                ...prevState,
+                url: !prevState
+            }
+        });
     }
+
+    const randomMeme = urlImg.data.memes[Math.floor(Math.random() * urlImg.data.memes.length)].url;
 
     return (
         <main>
@@ -20,7 +33,7 @@ export default function Meme(props) {
                     </div>
                 </div>
                 <input className='submit-button' type="submit" value={props.submitButtonText} onClick={changeUrl} />
-                <img src={url} alt="" />
+                <img src={randomMeme} alt="" />
             </div>
         </main>
     )
